@@ -9,4 +9,5 @@ var Entities = map[string]string{
 	"vjbyt6ia7gg1udmqnr3h6su4gayzxpfdjghp8v":  "LuckyPool.io",
 	"vsv4omourwwk2sl8d2hcivvbr01z92jql4c957":  "CoinEx Deposit",
 	"vikq6c6lda494l55i09hxmc1hrkg26xvgmuz7t":  "CoinEx",
+	"ve5euyqukl8vzm7x4ii1k0ai2o7p4s8gy56800":  "MinerLab.io",
 }
