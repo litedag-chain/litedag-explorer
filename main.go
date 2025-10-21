@@ -134,7 +134,7 @@ func main() {
 				Description:    delegateInfo.Name,
 				Balance:        float64(delegateInfo.TotalAmount) / config.COIN,
 				BalancePercent: float64(delegateInfo.TotalAmount) / float64(ir.Stake) * 100,
-				UptimePercent:  float64(v.BlocksStaked) / float64(totStaked) * 100,
+				UptimePercent:  v.BlocksStaked / totStaked * 100,
 			})
 		}
 
