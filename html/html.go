@@ -8,12 +8,12 @@ import (
 	"strconv"
 	"strings"
 	"time"
-	"virel-explorer/util"
+	"litedag-explorer/util"
 
-	"github.com/virel-project/virel-blockchain/v3/address"
-	"github.com/virel-project/virel-blockchain/v3/config"
-	"github.com/virel-project/virel-blockchain/v3/rpc/daemonrpc"
-	sutil "github.com/virel-project/virel-blockchain/v3/util"
+	"github.com/litedag-chain/litedag-blockchain/v3/address"
+	"github.com/litedag-chain/litedag-blockchain/v3/config"
+	"github.com/litedag-chain/litedag-blockchain/v3/rpc/daemonrpc"
+	sutil "github.com/litedag-chain/litedag-blockchain/v3/util"
 
 	"github.com/labstack/echo/v4"
 )
@@ -291,7 +291,7 @@ func (i *InfoRes) Hashrate() string {
 }
 
 func (i *InfoRes) Reward() string {
-	return strconv.FormatFloat(float64(i.BlockReward)/float64(i.Coin), 'f', 2, 64) + " VRL"
+	return strconv.FormatFloat(float64(i.BlockReward)/float64(i.Coin), 'f', 2, 64) + " LDG"
 }
 
 func formatNumber(n float64) string {

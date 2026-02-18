@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/virel-project/virel-blockchain/v3/bitcrypto"
-	"github.com/virel-project/virel-blockchain/v3/config"
-	"github.com/virel-project/virel-blockchain/v3/rpc/daemonrpc"
+	"github.com/litedag-chain/litedag-blockchain/v3/bitcrypto"
+	"github.com/litedag-chain/litedag-blockchain/v3/config"
+	"github.com/litedag-chain/litedag-blockchain/v3/rpc/daemonrpc"
 )
 
 type Blocks struct {

@@ -10,14 +10,14 @@ import (
 	"sort"
 	"strconv"
 	"strings"
-	"virel-explorer/html"
+	"litedag-explorer/html"
 
-	"github.com/virel-project/virel-blockchain/v3/address"
-	"github.com/virel-project/virel-blockchain/v3/block"
-	"github.com/virel-project/virel-blockchain/v3/chaintype"
-	"github.com/virel-project/virel-blockchain/v3/config"
-	"github.com/virel-project/virel-blockchain/v3/rpc/daemonrpc"
-	"github.com/virel-project/virel-blockchain/v3/util"
+	"github.com/litedag-chain/litedag-blockchain/v3/address"
+	"github.com/litedag-chain/litedag-blockchain/v3/block"
+	"github.com/litedag-chain/litedag-blockchain/v3/chaintype"
+	"github.com/litedag-chain/litedag-blockchain/v3/config"
+	"github.com/litedag-chain/litedag-blockchain/v3/rpc/daemonrpc"
+	"github.com/litedag-chain/litedag-blockchain/v3/util"
 
 	"github.com/labstack/echo/v4"
 )
@@ -125,7 +125,7 @@ func main() {
 				return err
 			}
 
-			if v.Id != 1 && strings.Contains(strings.ToLower(delegateInfo.Name), "virel.org") {
+			if v.Id != 1 && strings.Contains(strings.ToLower(delegateInfo.Name), "litedag.network") {
 				delegateInfo.Name = "delegate"
 			}
 
@@ -169,7 +169,7 @@ func main() {
 				return err
 			}
 
-			if v.Id != 1 && strings.Contains(strings.ToLower(delegateInfo.Name), "virel.org") {
+			if v.Id != 1 && strings.Contains(strings.ToLower(delegateInfo.Name), "litedag.network") {
 				delegateInfo.Name = "delegate"
 			}
 

@@ -7,9 +7,9 @@ import (
 	"io"
 	"net/http"
 	"time"
-	"virel-explorer/html"
+	"litedag-explorer/html"
 
-	"github.com/virel-project/virel-blockchain/v3/config"
+	"github.com/litedag-chain/litedag-blockchain/v3/config"
 )
 
 type coinpaprikaResponse struct {
@@ -35,7 +35,7 @@ func GetMarketInfo(supply uint64) (*html.MarketInfo, error) {
 	}
 
 	// Create GET request
-	req, err := http.NewRequest("GET", "https://api.coinpaprika.com/v1/tickers/vrl-virel", nil)
+	req, err := http.NewRequest("GET", "https://api.coinpaprika.com/v1/tickers/ldg-litedag", nil) // FIXME: update ticker ID once listed
 	if err != nil {
 		return nil, err
 	}

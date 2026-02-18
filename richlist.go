@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"sync"
 	"time"
-	"virel-explorer/html"
+	"litedag-explorer/html"
 
-	"github.com/virel-project/virel-blockchain/v3/rpc/daemonrpc"
+	"github.com/litedag-chain/litedag-blockchain/v3/rpc/daemonrpc"
 )
 
 type Updater struct {
