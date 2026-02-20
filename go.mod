@@ -25,3 +25,7 @@ require (
 	golang.org/x/term v0.34.0 // indirect
 	golang.org/x/text v0.28.0 // indirect
 )
+
+replace github.com/litedag-chain/litedag-blockchain/v3 => ../litedag-blockchain
+
+replace github.com/litedag-chain/go-randomlitedag => ../go-randomlitedag
