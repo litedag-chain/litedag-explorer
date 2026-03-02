@@ -6,7 +6,7 @@ toolchain go1.24.4
 
 require (
 	github.com/labstack/echo/v4 v4.13.4
-	github.com/litedag-chain/litedag-blockchain/v3 v3.1.9
+	github.com/litedag-chain/litedag-blockchain/v3 v3.2.0
 )
 
 require (

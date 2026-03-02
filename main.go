@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"math"
 	"net/http"
+	"os"
 	"slices"
 	"sort"
 	"strconv"
@@ -25,7 +26,11 @@ import (
 const MAX_BLOCKS_HISTORY = 50
 
 func main() {
-	d := daemonrpc.NewRpcClient("http://127.0.0.1:6311")
+	rpcURL := os.Getenv("NODE_RPC_URL")
+	if rpcURL == "" {
+		rpcURL = "http://127.0.0.1:6311"
+	}
+	d := daemonrpc.NewRpcClient(rpcURL)
 
 	bls := NewBlocks(d)
 	go bls.Updater()
